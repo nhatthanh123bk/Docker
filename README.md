@@ -13,18 +13,18 @@ docker-compose up ID_Containers -d
 ```  
 - option -d help you to run containers in the background 
 ### Command to stop container
-``` 
+```console 
 docker-compose stop ID_Containers
 ```
 or 
-```
+```console
 docker stop ID_Containers 
 ```
 ### Command to delete the Containers stopped.
-```
+```console
 docker container rm ID_Containers
 ```
 - In order to delete whole containers stopped:
-```
+```console
 docker rmi $(docker images -q)
 ```
